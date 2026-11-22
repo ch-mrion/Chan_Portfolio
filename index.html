@@ -4,25 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHAN | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=DM+Serif+Display&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="design.css">
+
 </head>
-<body>
-    <header>
-      <div>
-        <nav aria-label = "Main">
-        <a href="#top" class="logo">Marion Niño B. Chan Jr.</a>
-      <ul class="links" id="links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#journey">Journey</a></li>
-        <li><a href="#project">Project</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><button class="icon-btn" id="theme" aria-label="Toggle dark mode">🌙</button></li>
-        <button class="icon-btn menu-btn" id="menu" aria-label="Open menu" aria-expanded="false">☰</button>
-        </ul>
-        </nav>
-      </div>
-    </header>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-root-margin="0px 0px -40%" tabindex="0">
+
+    <!-- NAVBAR -->
+  <nav id="mainNav" class="navbar navbar-expand-lg sticky-top site-nav">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Marion...</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+       <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#journey">Journey</a></li>
+          <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+          <button class="theme-btn" id="theme" type="button" aria-label="Toggle dark mode">🌙</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
     
    
   <main> 
@@ -79,22 +93,22 @@
       <p class="sub">I'm still a beginner, and I'm proud of it. Here's where I am right now.</p>
       <div class="row">
         <div class="col-lg-8">
-          <!-- PALITAN: i-adjust ang data-value (0-100), aria-valuenow, at label ayon sa totoong level mo -->
+        
           <div class="mb-4">
             <div class="d-flex justify-content-between mb-1"><b>HTML</b><span class="level">Little Comfortable</span></div>
             <div class="progress" role="progressbar" aria-label="HTML skill level" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" data-value="75" style="width:0"></div></div>
           </div>
           <div class="mb-4">
             <div class="d-flex justify-content-between mb-1"><b>CSS</b><span class="level">Getting There</span></div>
-            <div class="progress" role="progressbar" aria-label="CSS skill level" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" data-value="60" style="width:0"></div></div>
+            <div class="progress" role="progressbar" aria-label="CSS skill level" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" data-value="60" style="width:0"></div></div>
           </div>
           <div class="mb-4">
             <div class="d-flex justify-content-between mb-1"><b>JavaScript</b><span class="level">Still Learning</span></div>
-            <div class="progress" role="progressbar" aria-label="JavaScript skill level" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" data-value="35" style="width:0"></div></div>
+            <div class="progress" role="progressbar" aria-label="JavaScript skill level" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" data-value="35" style="width:0"></div></div>
           </div>
           <div class="mb-2">
             <div class="d-flex justify-content-between mb-1"><b>Bootstrap</b><span class="level">Just Started</span></div>
-            <div class="progress" role="progressbar" aria-label="Bootstrap skill level" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" data-value="25" style="width:0"></div></div>
+            <div class="progress" role="progressbar" aria-label="Bootstrap skill level" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" data-value="25" style="width:0"></div></div>
           </div>
         </div>
       </div>
@@ -105,13 +119,48 @@
   <section id="journey" class="sec">
     <div class="container">
       <h2 class="sec-title">My Journey So Far</h2>
-      <p class="sub">From my first line of code to this website.</p>
-      <!-- PALITAN: ilagay ang totoong petsa at nangyari -->
+      <p class="sub">From Hello World to right here</p>
+     
       <ol class="timeline">
         <li><time class="hand">2025 - 2029</time><h3>Started College (2025)</h3><p>This is where my journey in Bachelor of Science in Information Technology began at Cavite State University - Silang Campus. Now, as a 2nd-year student, I'm excited to keep learning more about programming, web development, DBMS, and other core topics in my field.</p></li>
         <li><time class="hand">2023 - 2025</time><h3>Senior High School</h3><p>I studied at Philippine Christian University - Dasmariñas Campus under the Information and Communications Technology - Computer Programming strand. It was my starting point in coding (though my past laziness is the reason I'm still a beginner today). This was also where I first experienced working in a corporate environment during our work immersion. </p></li>
         <li><time class="hand">2019 - 2023</time><h3>Junior High School</h3><p>I studied at Paliparan III National High School in our barangay. Sparked my interest in tech through lessons on computer hardware, networking, and troubleshooting.</p></li>
       </ol>
+    </div>
+  </section>
+
+  <!-- PROJECT SECTION -->
+  <section id="project" class="sec">
+    <div class="container">
+      <h2 class="sec-title">My Project</h2>
+      <p class="sub">Project #1: This exact website.</p>
+      <article class="card scrap-card project-card overflow-hidden">
+        <div class="row g-0">
+          <div class="col-md-6 shot" aria-hidden="true">
+            <div class="mock">
+              <div class="top"><i></i><i></i><i></i></div>
+              <div class="scr"><b>My Portfolio</b><em></em><em></em><u></u></div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card-body p-4 d-flex flex-column gap-3 h-100">
+              <h3 class="project-title">This Portfolio Website</h3>
+              <p class="mb-0">A personal site showcasing who I am, what I'm learning, and my future goals. It survives phones, tablets, and laptops without breaking, features a dark mode for late-night browsing, and even has a working contact form.</p>
+              <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Bootstrap</li></ul>
+              <div class="mt-auto">
+                <button type="button" class="btn btn-scrap btn-scrap-primary" data-bs-toggle="modal" data-bs-target="#projectModal">What I learned</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <div class="card scrap-card next mt-4">
+        <div class="card-body text-center">
+          <p class="hand next-title mb-1">next project: coming soon 🚀</p>
+          <p class="mb-0 muted">pending: Passing this subject and surviving the school year—more projects to follow once I make it, HAHA!</p>
+        </div>
+      </div>
     </div>
   </section>
 
