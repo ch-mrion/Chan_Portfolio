@@ -179,3 +179,41 @@ a { color: inherit; }
 .chips li { padding: 2px 14px; border: 2px solid var(--line); border-radius: 999px; background: var(--sun); color: var(--on-sun); font-weight: 700; font-size: .88rem; }
 .next { border-style: dashed; box-shadow: none; background: transparent; --bs-card-bg: transparent; }
 .next-title { font-size: 1.8rem; line-height: 1.1; }
+
+/* MODAL */
+.modal-content { background: var(--card); color: var(--ink); border: 2px solid var(--line); border-radius: 18px; box-shadow: 6px 6px 0 var(--line); }
+.modal-header { border-bottom-color: var(--line); }
+
+/* Contact */
+.form-label { font-weight: 700; }
+.form-control { background-color: var(--card); color: var(--ink); border: 2px solid var(--line); border-radius: 12px; padding: .7rem .9rem; }
+.form-control:focus { background-color: var(--card); color: var(--ink); border-color: var(--line); box-shadow: 0 0 0 .25rem rgba(255, 209, 102, .6); }
+.toast { --bs-toast-bg: var(--card); --bs-toast-color: var(--ink); --bs-toast-border-color: var(--line); --bs-toast-border-width: 2px; --bs-toast-border-radius: 14px; font-weight: 700; }
+
+/* Footer at back-to-top */
+.site-footer { border-top: 2px solid var(--line); padding: 36px 0 44px; text-align: center; color: var(--muted); }
+.site-footer .hand { font-size: 1.7rem; color: var(--ink); }
+.to-top {
+  position: fixed; right: 18px; bottom: 18px; z-index: 1040; width: 46px; height: 46px; padding: 0;
+  opacity: 0; visibility: hidden; transform: translateY(10px);
+  transition: opacity .25s, transform .25s, visibility .25s;
+}
+.to-top.show { opacity: 1; visibility: visible; transform: none; }
+
+/* MOBILE */
+@media (max-width: 575.98px) {
+  .hero { padding-top: 48px; }
+  .sticky-note { right: 0; width: 150px; font-size: 1.25rem; }
+  .fact { transform: none; }
+}
+@media (max-width: 991.98px) {
+  .site-nav .navbar-nav { padding: .5rem 0 .75rem; }
+  .site-nav .navbar-nav .nav-link { width: fit-content; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .hero-text > *, .polaroid, .arrive { animation: none; }
+  .btn-scrap, .polaroid, .theme-btn, .navbar-brand, .to-top,
+  .site-nav .nav-link::before, .site-nav .nav-link::after, .progress-bar { transition: none; }
+}
